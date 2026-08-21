@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diagnostico-no-show"
+version = "1.0.0"
+description = "Diagnóstico de no-show: receita perdida + ociosidade de agenda"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Matheus Scherer", email = "contatomatheusscherer@gmail.com" }]
+keywords = ["python", "pandas", "no-show", "agenda", "receita", "operacao"]
+dependencies = [
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "pytest-cov>=5.0.0"]
+
+[project.scripts]
+diagnostico-no-show = "diagnostico_no_show.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
