@@ -1,5 +1,13 @@
 # Diagnóstico de No-Show
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="pytest" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT" />
+</p>
+
 **Problema de negócio:** clientes marcam horário e não aparecem.  
 A agenda fica ociosa. O dinheiro não entra.
 
