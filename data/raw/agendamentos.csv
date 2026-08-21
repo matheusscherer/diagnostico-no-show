@@ -1,0 +1,113 @@
+id,data,hora,profissional,servico,ticket,status,canal,confirmado
+AGD-001,2026-07-20,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-002,2026-07-20,10:00,Ana,Barba,35.00,compareceu,WhatsApp,sim
+AGD-003,2026-07-20,11:00,Bruno,Corte + barba,80.00,no_show,Instagram,nao
+AGD-004,2026-07-20,14:00,Bruno,Coloração,120.00,compareceu,Telefone,sim
+AGD-005,2026-07-20,15:00,Carla,Escova,60.00,compareceu,WhatsApp,sim
+AGD-006,2026-07-20,16:00,Carla,Corte feminino,90.00,no_show,Instagram,nao
+AGD-007,2026-07-20,17:00,Diego,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-008,2026-07-21,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-009,2026-07-21,10:30,Ana,Hidratação,70.00,cancelado,Telefone,sim
+AGD-010,2026-07-21,11:00,Bruno,Corte masculino,55.00,no_show,Instagram,nao
+AGD-011,2026-07-21,14:00,Bruno,Barba,35.00,compareceu,WhatsApp,sim
+AGD-012,2026-07-21,15:00,Carla,Corte + escova,110.00,compareceu,WhatsApp,sim
+AGD-013,2026-07-21,16:30,Carla,Coloração,120.00,no_show,WhatsApp,nao
+AGD-014,2026-07-21,17:00,Diego,Corte masculino,55.00,compareceu,Instagram,sim
+AGD-015,2026-07-22,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-016,2026-07-22,10:00,Ana,Barba,35.00,no_show,Telefone,nao
+AGD-017,2026-07-22,11:00,Bruno,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-018,2026-07-22,14:00,Bruno,Corte + barba,80.00,compareceu,Instagram,sim
+AGD-019,2026-07-22,15:30,Carla,Escova,60.00,no_show,Instagram,nao
+AGD-020,2026-07-22,16:00,Carla,Corte feminino,90.00,compareceu,WhatsApp,sim
+AGD-021,2026-07-22,17:00,Diego,Coloração,120.00,compareceu,Telefone,sim
+AGD-022,2026-07-23,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-023,2026-07-23,10:00,Ana,Hidratação,70.00,compareceu,WhatsApp,sim
+AGD-024,2026-07-23,11:00,Bruno,Barba,35.00,no_show,Instagram,nao
+AGD-025,2026-07-23,14:00,Bruno,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-026,2026-07-23,15:00,Carla,Corte feminino,90.00,compareceu,Telefone,sim
+AGD-027,2026-07-23,16:00,Carla,Escova,60.00,remarcado,WhatsApp,sim
+AGD-028,2026-07-23,17:00,Diego,Corte masculino,55.00,no_show,Instagram,nao
+AGD-029,2026-07-24,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-030,2026-07-24,10:00,Ana,Barba,35.00,compareceu,WhatsApp,sim
+AGD-031,2026-07-24,11:00,Bruno,Corte masculino,55.00,compareceu,Instagram,sim
+AGD-032,2026-07-24,14:00,Bruno,Coloração,120.00,no_show,WhatsApp,nao
+AGD-033,2026-07-24,15:00,Carla,Corte + escova,110.00,compareceu,WhatsApp,sim
+AGD-034,2026-07-24,16:00,Carla,Coloração,120.00,compareceu,Telefone,sim
+AGD-035,2026-07-24,17:00,Diego,Corte + barba,80.00,no_show,Instagram,nao
+AGD-036,2026-07-25,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-037,2026-07-25,10:30,Ana,Hidratação,70.00,no_show,Telefone,nao
+AGD-038,2026-07-25,11:00,Bruno,Barba,35.00,compareceu,WhatsApp,sim
+AGD-039,2026-07-25,14:00,Bruno,Corte + barba,80.00,compareceu,Instagram,sim
+AGD-040,2026-07-25,15:00,Carla,Escova,60.00,compareceu,WhatsApp,sim
+AGD-041,2026-07-25,16:00,Carla,Corte feminino,90.00,no_show,Instagram,nao
+AGD-042,2026-07-25,17:00,Diego,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-043,2026-07-27,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-044,2026-07-27,10:00,Ana,Barba,35.00,compareceu,WhatsApp,sim
+AGD-045,2026-07-27,11:00,Bruno,Corte masculino,55.00,no_show,Instagram,nao
+AGD-046,2026-07-27,14:00,Bruno,Coloração,120.00,compareceu,Telefone,sim
+AGD-047,2026-07-27,15:00,Carla,Corte + escova,110.00,compareceu,WhatsApp,sim
+AGD-048,2026-07-27,16:30,Carla,Escova,60.00,no_show,WhatsApp,nao
+AGD-049,2026-07-27,17:00,Diego,Corte + barba,80.00,compareceu,Instagram,sim
+AGD-050,2026-07-28,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-051,2026-07-28,10:00,Ana,Hidratação,70.00,compareceu,WhatsApp,sim
+AGD-052,2026-07-28,11:00,Bruno,Barba,35.00,compareceu,Telefone,sim
+AGD-053,2026-07-28,14:00,Bruno,Corte + barba,80.00,no_show,Instagram,nao
+AGD-054,2026-07-28,15:00,Carla,Corte feminino,90.00,compareceu,WhatsApp,sim
+AGD-055,2026-07-28,16:00,Carla,Coloração,120.00,no_show,Instagram,nao
+AGD-056,2026-07-28,17:00,Diego,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-057,2026-07-29,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-058,2026-07-29,10:00,Ana,Barba,35.00,no_show,Telefone,nao
+AGD-059,2026-07-29,11:00,Bruno,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-060,2026-07-29,14:00,Bruno,Coloração,120.00,compareceu,Instagram,sim
+AGD-061,2026-07-29,15:30,Carla,Escova,60.00,compareceu,WhatsApp,sim
+AGD-062,2026-07-29,16:00,Carla,Corte + escova,110.00,no_show,Instagram,nao
+AGD-063,2026-07-29,17:00,Diego,Corte + barba,80.00,compareceu,Telefone,sim
+AGD-064,2026-07-30,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-065,2026-07-30,10:00,Ana,Hidratação,70.00,compareceu,WhatsApp,sim
+AGD-066,2026-07-30,11:00,Bruno,Barba,35.00,no_show,Instagram,nao
+AGD-067,2026-07-30,14:00,Bruno,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-068,2026-07-30,15:00,Carla,Corte feminino,90.00,compareceu,Telefone,sim
+AGD-069,2026-07-30,16:00,Carla,Coloração,120.00,compareceu,WhatsApp,sim
+AGD-070,2026-07-30,17:00,Diego,Corte masculino,55.00,no_show,Instagram,nao
+AGD-071,2026-07-31,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-072,2026-07-31,10:00,Ana,Barba,35.00,compareceu,WhatsApp,sim
+AGD-073,2026-07-31,11:00,Bruno,Corte masculino,55.00,compareceu,Instagram,sim
+AGD-074,2026-07-31,14:00,Bruno,Coloração,120.00,no_show,WhatsApp,nao
+AGD-075,2026-07-31,15:00,Carla,Escova,60.00,compareceu,WhatsApp,sim
+AGD-076,2026-07-31,16:00,Carla,Corte + escova,110.00,no_show,Instagram,nao
+AGD-077,2026-07-31,17:00,Diego,Corte + barba,80.00,compareceu,Telefone,sim
+AGD-078,2026-08-03,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-079,2026-08-03,10:30,Ana,Hidratação,70.00,no_show,Telefone,nao
+AGD-080,2026-08-03,11:00,Bruno,Barba,35.00,compareceu,WhatsApp,sim
+AGD-081,2026-08-03,14:00,Bruno,Corte + barba,80.00,compareceu,Instagram,sim
+AGD-082,2026-08-03,15:00,Carla,Corte feminino,90.00,compareceu,WhatsApp,sim
+AGD-083,2026-08-03,16:00,Carla,Coloração,120.00,no_show,Instagram,nao
+AGD-084,2026-08-03,17:00,Diego,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-085,2026-08-04,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-086,2026-08-04,10:00,Ana,Barba,35.00,compareceu,WhatsApp,sim
+AGD-087,2026-08-04,11:00,Bruno,Corte masculino,55.00,no_show,Instagram,nao
+AGD-088,2026-08-04,14:00,Bruno,Coloração,120.00,compareceu,Telefone,sim
+AGD-089,2026-08-04,15:00,Carla,Escova,60.00,compareceu,WhatsApp,sim
+AGD-090,2026-08-04,16:30,Carla,Corte + escova,110.00,no_show,WhatsApp,nao
+AGD-091,2026-08-04,17:00,Diego,Corte + barba,80.00,compareceu,Instagram,sim
+AGD-092,2026-08-05,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-093,2026-08-05,10:00,Ana,Hidratação,70.00,compareceu,WhatsApp,sim
+AGD-094,2026-08-05,11:00,Bruno,Barba,35.00,compareceu,Telefone,sim
+AGD-095,2026-08-05,14:00,Bruno,Corte + barba,80.00,no_show,Instagram,nao
+AGD-096,2026-08-05,15:00,Carla,Corte feminino,90.00,compareceu,WhatsApp,sim
+AGD-097,2026-08-05,16:00,Carla,Coloração,120.00,compareceu,Telefone,sim
+AGD-098,2026-08-05,17:00,Diego,Corte masculino,55.00,no_show,Instagram,nao
+AGD-099,2026-08-06,09:00,Ana,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-100,2026-08-06,10:00,Ana,Barba,35.00,no_show,Telefone,nao
+AGD-101,2026-08-06,11:00,Bruno,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-102,2026-08-06,14:00,Bruno,Coloração,120.00,compareceu,Instagram,sim
+AGD-103,2026-08-06,15:30,Carla,Escova,60.00,compareceu,WhatsApp,sim
+AGD-104,2026-08-06,16:00,Carla,Corte + escova,110.00,no_show,Instagram,nao
+AGD-105,2026-08-06,17:00,Diego,Corte + barba,80.00,compareceu,Telefone,sim
+AGD-106,2026-08-07,09:00,Ana,Corte masculino,55.00,compareceu,WhatsApp,sim
+AGD-107,2026-08-07,10:00,Ana,Hidratação,70.00,compareceu,WhatsApp,sim
+AGD-108,2026-08-07,11:00,Bruno,Barba,35.00,no_show,Instagram,nao
+AGD-109,2026-08-07,14:00,Bruno,Corte + barba,80.00,compareceu,WhatsApp,sim
+AGD-110,2026-08-07,15:00,Carla,Corte feminino,90.00,compareceu,Telefone,sim
+AGD-111,2026-08-07,16:00,Carla,Coloração,120.00,no_show,WhatsApp,nao
+AGD-112,2026-08-07,17:00,Diego,Corte masculino,55.00,compareceu,Instagram,sim
