@@ -135,6 +135,8 @@ Este mostra **dinheiro**:
 
 É o tipo de entregável que gestor entende em 30 segundos.
 
+Ideal para clínicas, salões e profissionais liberais que querem transformar planilha de falta em decisão de negócio.
+
 ---
 
 ## Premissas e limites
