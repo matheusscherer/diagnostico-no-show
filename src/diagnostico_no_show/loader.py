@@ -67,10 +67,15 @@ def load_agendamentos(path: Path) -> pd.DataFrame:
     if df["confirmado"].isna().any():
         raise ValueError("confirmado deve ser sim/nao")
 
-    # Faixa horária para ranking (ex.: 14:30 -> 14h)
-    df["faixa_hora"] = df["hora"].str.slice(0, 2).str.zfill(2) + "h"
+    # Faixa horária para ranking (ex.: 14:30 -> 14h, 9:00 -> 09h)
+    hour = (
+        df["hora"]
+        .str.split(":", n=1)
+        .str[0]
+        .str.extract(r"(\d+)", expand=False)
+    )
+    df["faixa_hora"] = hour.fillna("0").astype(int).clip(0, 23).map(lambda h: f"{h:02d}h")
 
-    # Dia da semana
     weekdays = {
         0: "segunda",
         1: "terca",

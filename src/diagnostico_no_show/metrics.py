@@ -32,9 +32,8 @@ def compute_summary(
     base_taxa = len(compareceu) + n_no_show
     taxa_no_show = _pct(n_no_show, base_taxa)
 
-    # Confirmação vs no-show
-    confirmados = agendamentos[agendamentos["confirmado"] == True]  # noqa: E712
-    nao_confirmados = agendamentos[agendamentos["confirmado"] == False]  # noqa: E712
+    confirmados = agendamentos[agendamentos["confirmado"]]
+    nao_confirmados = agendamentos[~agendamentos["confirmado"]]
     taxa_ns_confirmado = _pct(
         len(confirmados[confirmados["status"] == STATUS_NO_SHOW]),
         len(confirmados[confirmados["status"].isin([STATUS_COMPARECEU, STATUS_NO_SHOW])]),
@@ -85,37 +84,21 @@ def rank_by(
     profissionais: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
     """Ranking de impacto por dimensão (profissional, horário, canal, serviço)."""
+    columns = [
+        group_col,
+        "agendamentos",
+        "no_shows",
+        "taxa_no_show_pct",
+        "receita_perdida_rs",
+        "custo_ociosidade_rs",
+    ]
     base = agendamentos[
         agendamentos["status"].isin([STATUS_COMPARECEU, STATUS_NO_SHOW])
     ].copy()
 
     if base.empty:
-        return pd.DataFrame(
-            columns=[
-                group_col,
-                "agendamentos",
-                "no_shows",
-                "taxa_no_show_pct",
-                "receita_perdida_rs",
-                "custo_ociosidade_rs",
-            ]
-        )
+        return pd.DataFrame(columns=columns)
 
-    grouped = (
-        base.groupby(group_col, as_index=False)
-        .agg(
-            agendamentos=("id", "count"),
-            no_shows=("status", lambda s: (s == STATUS_NO_SHOW).sum()),
-            receita_perdida_rs=(
-                "ticket",
-                lambda t: t[base.loc[t.index, "status"] == STATUS_NO_SHOW].sum()
-                if len(t)
-                else 0.0,
-            ),
-        )
-    )
-
-    # Recalcula receita de forma mais segura
     ns = base[base["status"] == STATUS_NO_SHOW]
     receita = (
         ns.groupby(group_col)["ticket"]
@@ -139,9 +122,9 @@ def rank_by(
 
     if profissionais is not None and not profissionais.empty and group_col == "profissional":
         custo_map = profissionais.set_index("profissional")["custo_hora"].to_dict()
-        result["custo_ociosidade_rs"] = result["profissional"].map(
-            lambda p: custo_map.get(p, 0.0)
-        ) * result["no_shows"]
+        result["custo_ociosidade_rs"] = (
+            result["profissional"].map(lambda p: custo_map.get(p, 0.0)) * result["no_shows"]
+        )
     else:
         result["custo_ociosidade_rs"] = 0.0
 
@@ -149,13 +132,4 @@ def rank_by(
         by=["receita_perdida_rs", "no_shows"], ascending=False
     ).reset_index(drop=True)
 
-    return result[
-        [
-            group_col,
-            "agendamentos",
-            "no_shows",
-            "taxa_no_show_pct",
-            "receita_perdida_rs",
-            "custo_ociosidade_rs",
-        ]
-    ]
+    return result[columns]
